@@ -25,61 +25,66 @@
                 </div>
             </div>
             <div class="container mt-5 text-center" id="resultswrapper" style="display:none">
-                <h2 id="locationname">Asheville, NC</h2>
+                <h2 id="locationname"></h2>
                 <button id="back" class="btn btn-primary mt-4">New Search</button>
-                <div class="row mt-4">
-                    <div class="weather-day card mx-auto my-3 text-white" id="today">
+                <div id="forecastwrapper" class="row mt-4">
+                    <div class="weather-day card mx-auto my-3 text-white" id="day1">
                         <div class="card-header text-center bg-primary">
                             Today
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li id="todays-high" class="list-group-item bg-secondary">High</li>
-                            <li id="todays-low" class="list-group-item bg-secondary">Low</li>
-                            <li id="todays-precip" class="list-group-item bg-secondary">Forecast</li>
+                            <li class="list-group-item bg-secondary">Temp</li>
+                            <li class="list-group-item bg-secondary">Humidity</li>
+                            <li class="list-group-item bg-secondary">Wind</li>
+                            <li class="list-group-item bg-secondary">Forecast</li>
                         </ul>
                     </div>
     
-                    <div class="weather-day card mx-auto my-3 text-white" id="today">
-                        <div class="card-header text-center bg-primary">
-                            Tomorrow
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li id="todays-high" class="list-group-item bg-secondary">High</li>
-                            <li id="todays-low" class="list-group-item bg-secondary">Low</li>
-                            <li id="todays-precip" class="list-group-item bg-secondary">Forecast</li>
-                        </ul>
-                    </div>
-    
-                    <div class="weather-day card mx-auto my-3 text-white" id="today">
+                    <div class="weather-day card mx-auto my-3 text-white" id="day2">
                         <div class="card-header text-center bg-primary">
                             
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li id="todays-high" class="list-group-item bg-secondary">High</li>
-                            <li id="todays-low" class="list-group-item bg-secondary">Low</li>
-                            <li id="todays-precip" class="list-group-item bg-secondary">Forecast</li>
+                            <li class="list-group-item bg-secondary">Temp</li>
+                            <li class="list-group-item bg-secondary">Humidity</li>
+                            <li class="list-group-item bg-secondary">Wind</li>
+                            <li class="list-group-item bg-secondary">Forecast</li>
                         </ul>
                     </div>
     
-                    <div class="weather-day card mx-auto my-3 text-white" id="today">
+                    <div class="weather-day card mx-auto my-3 text-white" id="day3">
+                        <div id="date" class="card-header text-center bg-primary">
+                            
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-secondary">Temp</li>
+                            <li class="list-group-item bg-secondary">Humidity</li>
+                            <li class="list-group-item bg-secondary">Wind</li>
+                            <li class="list-group-item bg-secondary">Forecast</li>
+                        </ul>
+                    </div>
+    
+                    <div class="weather-day card mx-auto my-3 text-white" id="day4">
                         <div class="card-header text-center bg-primary">
                             
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li id="todays-high" class="list-group-item bg-secondary">High</li>
-                            <li id="todays-low" class="list-group-item bg-secondary">Low</li>
-                            <li id="todays-precip" class="list-group-item bg-secondary">Forecast</li>
+                            <li class="list-group-item bg-secondary">Temp</li>
+                            <li class="list-group-item bg-secondary">Humidity</li>
+                            <li class="list-group-item bg-secondary">Wind</li>
+                            <li class="list-group-item bg-secondary">Forecast</li>
                         </ul>
                     </div>
     
-                    <div class="weather-day card mx-auto my-3 text-white" id="today">
+                    <div class="weather-day card mx-auto my-3 text-white" id="day5">
                         <div class="card-header text-center bg-primary">
                             
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li id="todays-high" class="list-group-item bg-secondary">High</li>
-                            <li id="todays-low" class="list-group-item bg-secondary">Low</li>
-                            <li id="todays-precip" class="list-group-item bg-secondary">Forecast</li>
+                            <li class="list-group-item bg-secondary">Temp</li>
+                            <li class="list-group-item bg-secondary">Humidity</li>
+                            <li class="list-group-item bg-secondary">Wind</li>
+                            <li class="list-group-item bg-secondary">Forecast</li>
                         </ul>
                     </div>
                 </div>
@@ -97,5 +102,6 @@
         </footer>
     </body>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js" integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </html>
