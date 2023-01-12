@@ -12,15 +12,21 @@
             <h1 class="p-3 text-white">Weather Tracks</h1>
         </header>
         <main>
-            <div class="input-group mb-3 w-50 mx-auto mt-5" id="searchbox" style="display:none">
-                <input type="text" class="form-control" placeholder="Enter location..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group mb-3 mx-auto col-sm-11 col-md-8 col-lg-6" id="searchbox">
+                <input id="searchfield" type="text" class="form-control" placeholder="Enter location..." aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <div class="input-group-append">
-                  <button class="btn btn-outline-secondary" id="gobutton" type="button">GO</button>
+                  <button class="btn btn-primary" id="gobutton" type="button">GO</button>
+                </div>
+                <div class="form-check ml-2 mt-2">
+                    <input id="checkbox" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Non-US Location
+                    </label>
                 </div>
             </div>
-            <div class="container mt-5 text-center" id="resultswrapper">
+            <div class="container mt-5 text-center" id="resultswrapper" style="display:none">
                 <h2 id="locationname">Asheville, NC</h2>
-                <button id="back" class="btn btn-primary mt-4">Go Back</button>
+                <button id="back" class="btn btn-primary mt-4">New Search</button>
                 <div class="row mt-4">
                     <div class="weather-day card mx-auto my-3 text-white" id="today">
                         <div class="card-header text-center bg-primary">
@@ -79,7 +85,7 @@
                 </div>
 
             </div>
-            <div id="search-history" class="card col-sm-12 col-md-9 col-lg-6 mx-auto my-5 text-center">
+            <div id="search-history" class="card col-sm-12 col-md-9 col-lg-6 mx-auto my-5 text-center" style="display:none">
                 <div class="card-header">Search History</div>
                 <ul class="list-group list-group-flush">
 
