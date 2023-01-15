@@ -1,0 +1,176 @@
+.weather-day {
+    width: 200px;
+}
+
+#searchbox {
+    margin-top: 200px;
+}
+
+.history-btn:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+.history-btn:active {
+    background-color: rgb(224, 240, 255);
+}
+
+.day-header {
+    text-decoration: underline;
+}
+
+/* temp color coding */
+.temp-a {
+    background-color: hsl(275, 100%, 65%);
+    color: white;
+}
+
+.temp-b {
+    background-color: hsl(250, 100%, 65%);
+}
+
+.temp-c {
+    background-color: hsl(225, 100%, 65%);
+}
+
+.temp-d {
+    background-color: hsl(200, 100%, 65%);
+}
+
+.temp-e {
+    background-color: hsl(175, 100%, 65%);
+}
+
+.temp-f {
+    background-color: hsl(150, 100%, 65%);
+}
+
+.temp-g {
+    background-color: hsl(125, 100%, 65%);
+}
+
+.temp-h {
+    background-color: hsl(100, 100%, 65%);
+}
+
+.temp-i {
+    background-color: hsl(75, 100%, 65%);
+}
+
+.temp-j {
+    background-color: hsl(50, 100%, 65%);
+}
+
+.temp-k {
+    background-color: hsl(25, 100%, 65%);
+}
+
+.temp-l {
+    background-color: hsl(0, 100%, 65%);
+}
+
+/* humidity color coding */
+.hum-a {
+    background-color: hsl(0, 100%, 55%);
+    color: white;
+}
+
+.hum-b {
+    background-color: hsl(13, 100%, 55%);
+    color: white;
+}
+
+.hum-c {
+    background-color: hsl(26, 100%, 55%);
+}
+
+.hum-d {
+    background-color: hsl(39, 100%, 55%);
+}
+
+.hum-e {
+    background-color: hsl(52, 100%, 55%);
+}
+
+.hum-f {
+    background-color: hsl(65, 100%, 55%);
+}
+
+.hum-g {
+    background-color: hsl(78, 100%, 55%);
+}
+
+.hum-h {
+    background-color: hsl(91, 100%, 55%);
+}
+
+.hum-i {
+    background-color: hsl(104, 100%, 55%);
+}
+
+.hum-j {
+    background-color: hsl(117, 100%, 55%);
+}
+
+/* wind speed color codes */
+.wind-b {
+    background-color: hsl(168, 100%, 50%);
+}
+
+.wind-c {
+    background-color: hsl(184, 100%, 50%);
+}
+
+.wind-d {
+    background-color: hsl(200, 100%, 60%);
+}
+
+.wind-e {
+    background-color: hsl(216, 100%, 60%);
+    color: white;
+}
+
+.wind-f {
+    background-color: hsl(232, 100%, 60%);
+    color: white;
+}
+
+.wind-g {
+    background-color: hsl(248, 100%, 60%);
+    color: white;
+}
+
+.wind-h {
+    background-color: hsl(264, 100%, 60%);
+    color: white;
+}
+
+.wind-i {
+    background-color: hsl(280, 100%, 60%);
+    color: white;
+}
+
+.wind-j {
+    background-color: hsl(296, 100%, 60%);
+    color: white;
+}
+
+.wind-k {
+    background-color: hsl(312, 100%, 60%);
+    color: white;
+}
+
+.wind-l {
+    background-color: hsl(328, 100%, 60%);
+    color: white;
+}
+
+.wind-m {
+    background-color: hsl(344, 100%, 60%);
+    color: white;
+}
+
+.wind-n {
+    background-color: hsl(0, 100%, 60%);
+    color: white;
+}
