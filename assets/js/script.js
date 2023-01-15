@@ -29,13 +29,10 @@ $(function() {
         if (inputarray.length > 1 && inputarray[0].charAt(inputarray[0].length - 1) != ",") {
             inputarray[0] = inputarray[0] + ",";
         }
-        // TODO: does this need to be a parameter?
         let mininput = inputarray.join('');
         if (regionstatus == false && inputarray.length < 3) {
             mininput = mininput + ',US';
         }
-        console.log(mininput);
-        console.log('http://api.openweathermap.org/geo/1.0/direct?q=' + mininput + '&limit=1&appid=0d53b40518548d72b4985f1cfd796f6a')
         fetch('http://api.openweathermap.org/geo/1.0/direct?q=' + mininput + '&limit=1&appid=0d53b40518548d72b4985f1cfd796f6a')
             .then(function(response) {
                 return response.json();
@@ -110,6 +107,7 @@ $(function() {
                 if (card.attr('id') != 'day1') {
                     title.text(day.add(i, 'day').format('MM/DD'));
                 }
+                colorCoding(content, forecastData, i);
                 content.eq(0).text(forecastData.temp[i] + " (F)");
                 content.eq(1).text("Humidity: " + forecastData.hum[i] + "%");
                 content.eq(2).text("Wind: " + forecastData.wind[i] + "mph");
@@ -157,6 +155,71 @@ $(function() {
             }
             $('#search-history').css('display', 'flex');
         }
+    }
+
+    function colorCoding(el, obj, x) {
+        let temp = obj.temp[x];
+        let tempcode;
+        if (temp <= 2) {
+            tempcode = 'temp-a';
+        } else if (temp > 2 && temp <= 32) {
+            tempcode = 'temp-b';
+        } else if (temp > 32 && temp <= 60) {
+            tempcode = 'temp-c';
+        } else if (temp > 60 && temp <= 90) {
+            tempcode = 'temp-d';
+        } else {
+            tempcode = 'temp-e';
+        }
+        el.eq(0).removeAttr('class').addClass('list-group-item ' + tempcode);
+        let hum = obj.hum[x];
+        let humcode;
+        if (hum <= 14.28) {
+            humcode = 'hum-a';
+        } else if (hum > 14.28 && hum <= 28.57) {
+            humcode = 'hum-b';
+        } else if (hum > 28.57 && hum <= 42.86) {
+            humcode = 'hum-c';
+        } else if (hum > 42.86 && hum <= 57.14) {
+            humcode = 'hum-d';
+        } else if (hum > 57.14 && hum <= 71.43) {
+            humcode = 'hum-e';
+        } else if (hum > 71.43 && hum <= 85.71) {
+            humcode = 'hum-f';
+        } else {
+            humcode = 'hum-g';
+        }
+        el.eq(1).removeAttr('class').addClass('list-group-item ' + humcode);
+        let wind =obj.wind[x];
+        let windcode;
+        if (wind < 1) {
+            windcode = 'wind-b';
+        } else if (wind >= 1 && wind < 4) {
+            windcode = 'wind-c';
+        } else if (wind >= 4 && wind < 8) {
+            windcode = 'wind-d';
+        } else if (wind >= 8 && wind < 13) {
+            windcode = 'wind-e';
+        } else if (wind >= 13 && wind < 19) {
+            windcode = 'wind-f';
+        } else if (wind >= 19 && wind < 25) {
+            windcode = 'wind-g';
+        } else if (wind >= 25 && wind < 32) {
+            windcode = 'wind-h';
+        } else if (wind >= 32 && wind < 39) {
+            windcode = 'wind-i';
+        } else if (wind >= 39 && wind < 47) {
+            windcode = 'wind-j';
+        } else if (wind >= 47 && wind < 55) {
+            windcode = 'wind-k';
+        } else if (wind >=55 && wind < 64) {
+            windcode = 'wind-l';
+        } else if (wind >= 64 && wind < 73) {
+            windcode = 'wind-m';
+        } else {
+            windcode = 'wind-n';
+        }
+        el.eq(2).removeAttr('class').addClass('list-group-item ' + windcode);
     }
 
     getHistory();

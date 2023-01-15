@@ -14,3 +14,117 @@
 .history-btn:active {
     background-color: rgb(224, 240, 255);
 }
+
+/* temp color coding */
+.temp-a {
+    background-color: rgb(208, 127, 255);
+}
+
+.temp-b {
+    background-color: rgb(127, 193, 255);
+}
+
+.temp-c {
+    background-color: rgb(251, 255, 128);
+}
+
+.temp-d {
+    background-color: rgb(255, 180, 122);
+}
+
+.temp-e {
+    background-color: rgb(255, 124, 124);
+}
+
+/* humidity color coding */
+.hum-a {
+    background-color: hsl(0, 84%, 52%);
+}
+
+.hum-b {
+    background-color: hsl(20, 84%, 52%);
+}
+
+.hum-c {
+    background-color: hsl(40, 84%, 52%);
+}
+
+.hum-d {
+    background-color: hsl(60, 84%, 52%);
+}
+
+.hum-e {
+    background-color: hsl(80, 84%, 52%);
+}
+
+.hum-f {
+    background-color: hsl(100, 84%, 52%);
+}
+
+.hum-g {
+    background-color: hsl(120, 84%, 52%);
+}
+
+/* wind speed color codes */
+
+.wind-b {
+    background-color: hsl(168, 100%, 50%);
+}
+
+.wind-c {
+    background-color: hsl(184, 100%, 50%);
+}
+
+.wind-d {
+    background-color: hsl(200, 100%, 60%);
+}
+
+.wind-e {
+    background-color: hsl(216, 100%, 60%);
+    color: white;
+}
+
+.wind-f {
+    background-color: hsl(232, 100%, 60%);
+    color: white;
+}
+
+.wind-g {
+    background-color: hsl(248, 100%, 60%);
+    color: white;
+}
+
+.wind-h {
+    background-color: hsl(264, 100%, 60%);
+    color: white;
+}
+
+.wind-i {
+    background-color: hsl(280, 100%, 60%);
+    color: white;
+}
+
+.wind-j {
+    background-color: hsl(296, 100%, 60%);
+    color: white;
+}
+
+.wind-k {
+    background-color: hsl(312, 100%, 60%);
+    color: white;
+}
+
+.wind-l {
+    background-color: hsl(328, 100%, 60%);
+    color: white;
+}
+
+.wind-m {
+    background-color: hsl(344, 100%, 60%);
+    color: white;
+}
+
+.wind-n {
+    background-color: hsl(0, 100%, 60%);
+    color: white;
+}
