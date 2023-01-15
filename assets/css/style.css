@@ -5,3 +5,12 @@
 #searchbox {
     margin-top: 200px;
 }
+
+.history-btn:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+.history-btn:active {
+    background-color: rgb(224, 240, 255);
+}
