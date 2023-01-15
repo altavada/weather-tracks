@@ -35,6 +35,7 @@ $(function() {
         if (regionstatus == false && inputarray.length < 3) {
             mininput = mininput + ',US';
         }
+        // Using Open Weather's Geocoding API to translate names to coordinates, as opposed to the built-in geocoder, which has been deprecated.
         fetch('https://api.openweathermap.org/geo/1.0/direct?q=' + mininput + '&limit=1&appid=0d53b40518548d72b4985f1cfd796f6a')
             .then(function(response) {
                 return response.json();
