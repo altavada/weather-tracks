@@ -35,7 +35,7 @@ $(function() {
         if (regionstatus == false && inputarray.length < 3) {
             mininput = mininput + ',US';
         }
-        fetch('http://api.openweathermap.org/geo/1.0/direct?q=' + mininput + '&limit=1&appid=0d53b40518548d72b4985f1cfd796f6a')
+        fetch('https://api.openweathermap.org/geo/1.0/direct?q=' + mininput + '&limit=1&appid=0d53b40518548d72b4985f1cfd796f6a')
             .then(function(response) {
                 return response.json();
             })
@@ -69,7 +69,7 @@ $(function() {
 
     // Fetches 5-day forecast data and writes to page, toggles page to display results
     function getResults(coord) {
-        fetch('http://api.openweathermap.org/data/2.5/forecast?' + coord + '&appid=0d53b40518548d72b4985f1cfd796f6a&units=imperial')
+        fetch('https://api.openweathermap.org/data/2.5/forecast?' + coord + '&appid=0d53b40518548d72b4985f1cfd796f6a&units=imperial')
         .then(function(response){
             return response.json();
         })
