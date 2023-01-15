@@ -1,6 +1,3 @@
-// Key: 0d53b40518548d72b4985f1cfd796f6a
-// Geocoder endpoint: http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}
-
 $(function() {
     var locationName = $('#locationname');
     var searchField = $('#searchfield');
