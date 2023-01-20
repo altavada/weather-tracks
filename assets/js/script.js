@@ -14,6 +14,7 @@ $(function() {
         $('#searchbox').css('display', 'flex');
         $('#resultswrapper').css('display', 'none');
         searchField.val('');
+        searchField.attr('placeholder', 'Enter location...');
     })
 
     // Processes search request, fetches location coordinates, saves search if successful and if new search
@@ -39,7 +40,8 @@ $(function() {
             })
             .then(function(data) {
                 if (data[0] == null) {
-                    searchField.val('ERROR -- Location not found');
+                    searchField.val('');
+                    searchField.attr('placeholder', 'ERROR -- Location not found');
                     return;
                 }
                 let country = data[0].country;
@@ -73,7 +75,8 @@ $(function() {
         })
         .then(function(data){
             if (data.city == null) {
-                searchField.val('ERROR -- Forecast unavailable');
+                searchField.val('');
+                searchField.attr('placeholder', 'ERROR -- Forecast Unavailable');
                 return;
             }
             let list = data.list;
