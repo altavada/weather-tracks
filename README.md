@@ -5,19 +5,19 @@
 This project utilizes the Bootstrap framework and the fetch API method to handle user searches and return 5-day forecast data for a given location in the world by calling on the Open Weather Map server-side API. It also stores recent searches in the user's browser cache, and automatically creates and updates a list of recent searches. Numeric weather data is color-coded according to its values, to help the user easily visualize relative scale. Temperature (in Fahrenheit) and humidity (in percent humidity index) color-coding uses a base-10 scale and covers a normative range of 0-100, with additional temperature categories handling temperatures outside this range. Wind speed color-coding is based off the Beaufort wind force scale. As true daily highs and lows are not available via this API (a paid alternative exists from the same site that would fulfill this specification), future-date forecasts take results from 3PM each day, while current conditions are listed from the closest 3-hour forecast to the present time.
 
 User opens page for first time:
-![A first-time user opens the page](./Assets/images/sample.png)
+![A first-time user opens the page](./assets/images/sample.png)
 
 User performs first search (US location):
-![User performs first search](./Assets/images/sample2.png)
+![User performs first search](./assets/images/sample2.png)
 
 User clicks "New Search" or reloads page, begins second search (non-US location). Recent Search history appears:
-![User clicks "New Search" or reloads page, and begins second search](./Assets/images/sample3.png)
+![User clicks "New Search" or reloads page, and begins second search](./assets/images/sample3.png)
 
 New search performed, Recent Search history persists:
-![New search performed, Recent Search history persists](./Assets/images/sample4.png)
+![New search performed, Recent Search history persists](./assets/images/sample4.png)
 
 Recent Search item clicked. Search history and results updated:
-![Recent Search item clicked. Search history and results updated](./Assets/images/sample5.png)
+![Recent Search item clicked. Search history and results updated](./assets/images/sample5.png)
 
 
 
